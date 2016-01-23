@@ -55,14 +55,27 @@ a,
 	border-bottom-color: #a00600;
 }
 #gkLogo.cssLogo {
-	background-image: url('../images/logo.png');
+	/*background-image: url('../images/logo.png');*/
+	background-image: url('../images/mayak.jpg');
+	background-size: cover;
 }
 #gkLogoSmall.cssLogo {
-	background-image: url('../images/logo.png');
+	/*background-image: url('../images/logo.png');*/
+	background-image: url('../images/mayak.jpg');
+	background-size: cover;
 }
 .svg #gkLogo.cssLogo,
 .svg #gkLogoSmall.cssLogo {
-	background-image: url('../images/logo.svg');
+	/*background-image: url('../images/logo.svg');*/
+	background-image: url('../images/mayak.jpg');
+}
+
+.svg #gkLogo.cssLogo {
+	background-size: cover;
+}
+
+.svg #gkLogoSmall.cssLogo {
+	background-size: contain;
 }
 
 /* joomla.css */
