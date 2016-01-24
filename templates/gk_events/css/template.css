@@ -238,6 +238,7 @@ iframe { max-width: 100%!important; }
 .frontpage #gkHeader {
 	background: url('../images/header_bg.jpg') no-repeat center top;
 	background-attachment: fixed;
+	background-size: cover;
 }
 #gkMainbody > div > section {
 	padding: 20px 0;
