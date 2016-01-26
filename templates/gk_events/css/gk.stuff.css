@@ -994,6 +994,7 @@ img.nspImage.gkResponsive {
 	opacity: .65;
 	text-align: center;
 	width: 32px;
+	display: none;
 }
 #gkHeaderMod .btn-video:active,
 #gkHeaderMod .btn-video:focus,

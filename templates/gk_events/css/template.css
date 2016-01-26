@@ -152,7 +152,7 @@ iframe { max-width: 100%!important; }
 	left: 50%;
 	margin-left: -76px;
 	position: relative;
-	top: -25px;
+	top: 0;
 }
 #gkHeaderNav.static #gkMainMenu {
 	top: 70px;
@@ -964,3 +964,18 @@ span#fb-auth {
 span#fb-auth:hover { background-color: #556b9b; }
 .login span#fb-auth { margin: 6px 0 0 10px; }
 body[data-mobile="true"] #gkMobileMenu select { font-size: 50px; }
+
+#gkLang, .lang-menu {
+	position: absolute !important;
+	right: 40px;
+	z-index: 99999;
+}
+
+.lang-menu {
+	top: 20px;
+}
+
+#gkLang .lang-inline li,
+.lang-menu .lang-inline li {
+	border-bottom: none;
+}

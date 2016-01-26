@@ -65,7 +65,14 @@ $tpl_page_suffix = $page_suffix_output != '' ? ' class="'.$page_suffix_output.'"
 	<![endif]-->
 	<?php endif; ?>
 
-	<div id="gkBg">		
+	<div id="gkBg">
+		<?php if($this->API->modules('lang')) : ?>
+			<div id="gkLang">
+				<div class="gkPage">
+					<jdoc:include type="modules" name="lang" style="gk_style" />
+				</div>
+			</div>
+		<?php endif; ?>
 	    <header id="gkHeader"<?php if(in_array('frontpage', $page_suffix_table) === FALSE) : ?> class="menu-visible"<?php endif; ?>>		
 			<div id="gkHeaderNav"<?php if(in_array('frontpage', $page_suffix_table) === FALSE) : ?> class="static"<?php endif; ?>>
 				<div class="gkPage">
@@ -87,6 +94,7 @@ $tpl_page_suffix = $page_suffix_output != '' ? ' class="'.$page_suffix_output.'"
 	                 <?php endif; ?>
 		    	</div>
 	    	</div>
+
 	    	
 	    	<?php if($this->API->modules('header')) : ?>
 	    	<div id="gkHeaderMod">
@@ -216,13 +224,7 @@ $tpl_page_suffix = $page_suffix_output != '' ? ' class="'.$page_suffix_output.'"
 	    </section>
 	    <?php endif; ?>
 	    
-	    <?php if($this->API->modules('lang')) : ?>
-	    <div id="gkLang">
-	    	<div class="gkPage">
-	         	<jdoc:include type="modules" name="lang" style="gk_style" />
-	         </div>
-	    </div>
-	    <?php endif; ?>
+
     </div>
     
     <?php $this->layout->loadBlock('footer'); ?>
